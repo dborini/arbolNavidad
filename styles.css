@@ -1,6 +1,6 @@
 /* Fondo de la página */
 body {
-    background-image: url("../ArbolDeNavidad/arbolNavidad/fondo/fondoavidad.jpg");
+    background-image: url("../arbolNavidad/fondo/fondoavidad.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* El fondo queda fijo al hacer scroll */
