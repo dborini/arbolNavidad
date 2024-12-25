@@ -1,0 +1,108 @@
+/* Fondo de la página */
+body {
+    background-image: url("../ArbolDeNavidad/arbolNavidad/fondo/fondoavidad.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* El fondo queda fijo al hacer scroll */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* Contenedor principal */
+#contenedor {
+    flex: 1; /* Ocupar el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centrar el contenido vertical y horizontalmente */
+}
+
+/* Árbol centrado */
+#arbol {
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+/* Fila del árbol */
+.fila {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para las estrellas y el tronco */
+.color {
+    animation: animarHojas 1s infinite;
+}
+
+/* Animación de colores en las estrellas */
+@keyframes animarHojas {
+    0% {
+        color: blue;
+    }
+    25% {
+        color: red;
+    }
+    50% {
+        color: green;
+    }
+    75% {
+        color: lightblue;
+    }
+    100% {
+        color: yellow;
+    }
+}
+
+/* Mensaje debajo del árbol */
+#mensaje h1 {
+    margin: 20px 0 10px;
+    font-size: 25px;
+    color: gold;
+}
+
+#mensaje p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: rgba(217, 217, 217, 0.8); /* Fondo translúcido */
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.letrafooter {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Caja para árbol y mensaje */
+.cajaindexventanas {
+    border-radius: 55px;
+    background-color: rgba(29, 23, 23, 0.7); /* Fondo translúcido */
+    padding: 20px;
+    width: 755px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+    font-size: 20px;
+    position: relative;
+    min-height: 100px; /* Asegura un tamaño mínimo, pero crecerá según el contenido */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombras para dar efecto */
+}
